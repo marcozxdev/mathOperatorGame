@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #6200ea;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+label, select {
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    color: #555;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.center-botones {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #6200ea;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.buttonsendjs {
+    background-color: #000;
+    color: #fff;
+}
