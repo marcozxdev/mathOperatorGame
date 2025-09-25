@@ -1,27 +1,27 @@
 const num1Input = document.getElementById("num1");
 const num2Input = document.getElementById("num2");
-const BTN_SEND = document.getElementById('send')
-const BTN_RESET = document.getElementById('reset')
+const BTN_SEND = document.getElementById('send');
+const BTN_RESET = document.getElementById('reset');
 
 num1Input.addEventListener('input', () => {
     if(num1Input.value!=="" && num2Input.value!==""){
         BTN_SEND.disabled=false;
-        BTN_SEND.classList.remove('buttonsendjs')
+        BTN_SEND.classList.remove('buttonsendjs');
     } else {
         BTN_SEND.disabled=true
-        BTN_SEND.classList.add('buttonsendjs')
+        BTN_SEND.classList.add('buttonsendjs');
     }
 })
 
 num2Input.addEventListener('input', () => {
     if(num1Input.value!=="" && num2Input.value!==""){
         BTN_SEND.disabled=false
-        BTN_SEND.classList.remove('buttonsendjs')
+        BTN_SEND.classList.remove('buttonsendjs');
     } else {
         BTN_SEND.disabled=true
-        BTN_SEND.classList.add('buttonsendjs')
+        BTN_SEND.classList.add('buttonsendjs');
     }
-})
+});
 
 BTN_SEND.addEventListener('click', () => {
     const operation = document.getElementById("operation").value;
@@ -30,7 +30,7 @@ BTN_SEND.addEventListener('click', () => {
 
     if (isNaN(num1) || isNaN(num2)) {
         alert("Enter two numbers");
-        return;
+        return
     }
 
     let result;
@@ -38,13 +38,13 @@ BTN_SEND.addEventListener('click', () => {
     switch (operation) {
         case "sumar":
             result = num1 + num2;
-            break;
+            break
         case "restar":
             result = num1 - num2;
-            break;
+            break
         case "multiplicar":
             result = num1 * num2;
-            break;
+            break
         case "dividir":
             if (num2 === 0){
                 alert("It cannot be divided by zero.");
@@ -61,8 +61,8 @@ BTN_SEND.addEventListener('click', () => {
 })
 
 BTN_RESET.addEventListener('click', () => {
-    num1Input.value=""
-    num2Input.value=""
+    num1Input.value="";
+    num2Input.value="";
     BTN_SEND.disabled= true;
     BTN_SEND.classList.add('buttonsendjs');
 })
