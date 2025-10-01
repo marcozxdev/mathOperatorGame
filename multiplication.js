@@ -20,7 +20,7 @@ const generateMultiplicationTable = (n) => {
 
     const body = document.createElement('tbody');
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 10; i++){
         const row = document.createElement('tr');
 
         const cellNumber = document.createElement('td');
@@ -53,16 +53,16 @@ const generateMultiplicationTable = (n) => {
 const renderTablesMultiplication = (selector, numberOfTables = 10) => {
     const container = document.querySelector(selector);
     
-    if (!container) {
+    if (!container){
         console.error(`The item with selector wasn't found ${selector}`);
-        return;
+        return null;
     }
 
     container.style.display = 'flex';
     container.style.flexWrap = 'wrap';
     container.style.justifyContent = 'center';
 
-    for (let i = 1; i <= numberOfTables; i++) {
+    for (let i = 1; i <= numberOfTables; i++){
         container(generateMultiplicationTable(i));
     }
 };
