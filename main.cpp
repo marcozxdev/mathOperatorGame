@@ -17,15 +17,15 @@ void game() {
     cin >> answer;
     cout << "\n";
 
-    switch answer;
+    switch (answer) {
       case 140;
-      cout << "¡Es correcto!" << endl;
-      break;
+        cout << "¡Es correcto!" << endl;
+        break;
     }
-    else {
-      cout << "¡Es incorrecto!" << endl;
-      continue;
-    }
+      default {
+        cout << "¡Es Incorrecto!" << endl;
+        break;
+      }
   }
 }
 
