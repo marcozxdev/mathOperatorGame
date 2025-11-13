@@ -17,7 +17,8 @@ void game() {
     cin >> answer;
     cout << "\n";
 
-    if (answer == 140) {
+    switch answer;
+      case 140;
       cout << "¡Es correcto!" << endl;
       break;
     }
