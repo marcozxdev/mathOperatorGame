@@ -5,7 +5,7 @@ using namespace std;
 void game() {
   string name;
   int answer = 0;
-  
+
   cout << "¿Cómo te llamas?: ";
   cin >> name;
   cout << "\n";
@@ -13,7 +13,7 @@ void game() {
   cout << "Mucho gusto " + name << endl;
 
   while (true) {
-    cout << "¿Cuánto es 60 + 80?: "
+    cout << "¿Cuánto es 60 + 80?: ";
     cin >> answer;
     cout << "\n";
 
@@ -31,6 +31,6 @@ void game() {
 int main() {
   cout << "Hola usuario" << endl;
   game();
-  
+
   return 0;
 }
