@@ -8,17 +8,17 @@ num1Input.addEventListener('input', () => {
         BTN_SEND.disabled=false;
         BTN_SEND.classList.remove('buttonsendjs');
     } else {
-        BTN_SEND.disabled=true
+        BTN_SEND.disabled=true;
         BTN_SEND.classList.add('buttonsendjs');
     }
-})
+});
 
 num2Input.addEventListener('input', () => {
     if(num1Input.value!=="" && num2Input.value!==""){
-        BTN_SEND.disabled=false
+        BTN_SEND.disabled=false;
         BTN_SEND.classList.remove('buttonsendjs');
     } else {
-        BTN_SEND.disabled=true
+        BTN_SEND.disabled=true;
         BTN_SEND.classList.add('buttonsendjs');
     }
 });
@@ -30,7 +30,7 @@ BTN_SEND.addEventListener('click', () => {
 
     if (isNaN(num1) || isNaN(num2)) {
         alert("Enter two numbers");
-        return
+        return;
     }
 
     let result;
@@ -44,7 +44,7 @@ BTN_SEND.addEventListener('click', () => {
             break
         case "multiplicar":
             result = num1 * num2;
-            break
+            break;
         case "dividir":
             if (num2 === 0){
                 alert("It cannot be divided by zero.");
@@ -65,4 +65,4 @@ BTN_RESET.addEventListener('click', () => {
     num2Input.value="";
     BTN_SEND.disabled= true;
     BTN_SEND.classList.add('buttonsendjs');
-})
+});
