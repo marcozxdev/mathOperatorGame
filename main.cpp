@@ -18,14 +18,13 @@ void game() {
     cout << "\n";
 
     switch (answer) {
-      case 140;
+      case 140:
         cout << "¡Es correcto!" << endl;
         break;
-    }
-      default {
+    default:
         cout << "¡Es Incorrecto!" << endl;
         break;
-      }
+    }
   }
 }
 
