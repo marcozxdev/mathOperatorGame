@@ -55,7 +55,7 @@ BTN_SEND.addEventListener('click', () => {
         default:
             alert("Invalid operation");
             break;
-            return;
+            return; // Oye bro, que vas a retornar en 'default' si estás usando 'break' 😂😂
     }
     alert(`The result of the operation is: ${result}`);
 })
