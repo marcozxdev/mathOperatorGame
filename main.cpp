@@ -1,7 +1,7 @@
 #include <iostream>
 
 void game(int* ptr) {
-  std::tring name;
+  std::string name;
   int answer = 0;
 
   std::cout << "¿Cómo te llamas?: ";
@@ -9,6 +9,10 @@ void game(int* ptr) {
   std::cout << "\n";
 
   std::cout << "Mucho gusto " + name << std::endl;
+
+  for (int i = 0; i < ptr.lenght(); i++) {
+    ptr[i];
+  }
 
   while (true) {
     std::cout << "¿Cuánto es 60 + 80?: ";
@@ -24,6 +28,7 @@ void game(int* ptr) {
         break;
     }
   }
+  delete[] ptr;
 }
 
 int main() {
