@@ -1,6 +1,23 @@
 import sys
 import time
 import random
+import sqlite3 as sql
+
+class DataBase:
+    def __init__(self, conn):
+        self.conn = conn
+        self.conn.commit()
+        self.conn.close()
+
+    def sql_command(self, command):
+        try:
+            self.conn = sql.connect()
+            self.cursor = self.conn.cursor()
+            self.command = command
+            self.cursor.execute(self.command)
+        finally:
+            self.conn.commit()
+            self.conn.close()
 
 def game():
     print("------ Iniciando juego ------")
