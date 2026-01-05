@@ -19,7 +19,7 @@ class DataBase:
             self.conn.commit()
             self.conn.close()
 
-def game():
+def main_game():
     print("------ Iniciando juego ------")
 
     mini_games = """
@@ -43,4 +43,4 @@ def game():
         pass
 
 if __name__ == '__main__':
-    game()
+    main_game()
