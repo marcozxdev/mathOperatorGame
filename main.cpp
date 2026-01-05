@@ -1,28 +1,26 @@
 #include <iostream>
 
-using namespace std;
-
-void game() {
-  string name;
+void game(int* ptr) {
+  std::tring name;
   int answer = 0;
 
-  cout << "¿Cómo te llamas?: ";
-  cin >> name;
-  cout << "\n";
+  std::cout << "¿Cómo te llamas?: ";
+  std::cin >> name;
+  std::cout << "\n";
 
-  cout << "Mucho gusto " + name << endl;
+  std::cout << "Mucho gusto " + name << std::endl;
 
   while (true) {
-    cout << "¿Cuánto es 60 + 80?: ";
-    cin >> answer;
-    cout << "\n";
+    std::cout << "¿Cuánto es 60 + 80?: ";
+    std::cin >> answer;
+    std::cout << "\n";
 
     switch (answer) {
       case 140:
-        cout << "¡Es correcto!" << endl;
+        std::cout << "¡Es correcto!" << endl;
         break;
     default:
-        cout << "¡Es Incorrecto!" << endl;
+        std::cout << "¡Es Incorrecto!" << endl;
         break;
     }
   }
@@ -30,7 +28,10 @@ void game() {
 
 int main() {
   cout << "Hola usuario" << endl;
-  game();
+
+  int* p = new int[6 << 20];
+  
+  game(p);
 
   return 0;
 }
